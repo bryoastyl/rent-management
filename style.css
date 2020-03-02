@@ -1,0 +1,252 @@
+body {
+	font-family: aerial, helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+.dark{
+	padding: 15px;
+	background: #5F9EA0;
+	color: white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+header {
+	background: #5F9EA0;
+	color: white;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+header a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header li{
+	float: left;
+	display: inline;
+	padding: 0px 20px 0px 20px;
+}
+header #branding{
+	float: left;
+}
+header #branding h1{
+	margin: 0;
+}
+header #branding img {
+	width: 90px;
+}
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+/* to make the current link and the word highland in the header orange*/
+header .highlight, header .current a {
+	color: #e8491d;
+	font-weight: bold;
+} 
+header a:hover{
+	color: #cccccc;
+	font-weight: bold;
+}
+/*showcase*/
+#showcase {
+	min-height: 400px;
+	background: url('./images/apartment1.jpg') no-repeat 0px -400px;
+	text-align: center;
+	color: white;
+}
+#showcase h1{
+	margin-bottom: 10px;
+	font-size: 55px;
+	margin-top: 100px;
+}
+#showcase p{
+	font-size: 20px;
+}
+/*boxes area*/
+#boxes{
+	margin-top: 20px;
+}
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+#boxes .box img,
+.logo img,
+#contacts .contact img {
+	width: 150px;
+}
+/* sidemenu for  tenant and admin dashboard*/
+aside#menu_col {
+	float: left;
+	width: 30%;
+	margin-top: 10px;
+	min-height: 100%
+}
+article#main_info{
+	float: right;
+	width: 65%;
+}
+aside .dash {
+	padding: 15px;
+	background: #5F9EA0;
+	color: white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	height: 100%;
+}
+/*SIDEBAR for about page*/
+aside#sidebar {
+	float: right;
+	width: 30%;
+	height: 100%;
+	margin-top: 10px;
+}
+article#main_col{
+	float: left;
+	width: 65%;
+}
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: white;
+	background-color: #e8491d;
+	text-align: center;
+	border-top: #5F9EA0 3px solid;
+}
+#contacts {
+	margin-bottom: 10px;
+}
+#contacts .contact {
+	float: left;
+	text-align: center;
+	width: 30%;
+	padding: 10px;
+}
+
+/*Register and Login pages*/
+form {
+	width: 300px;
+	margin: 0px auto;
+	margin-bottom: 50px;
+	padding: 20px;
+	border: 1px solid #80C4DE;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+.header {
+	width: 300px;
+	margin: 50px auto 0px;
+	color: white;
+	background: #5F9EA0;
+	text-align: center;
+	border: 1px solid #80C4DE;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+}
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+	font-weight: bold;
+}
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.input-group select {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.btn {
+	padding: 10px;
+	font-size: 15px;
+	color: #e8491d;
+	background: #5F9EA0;
+	border: none;
+	border-radius: 5px;
+	float: center;
+}
+/*table with personal info of tenants*/
+table {
+	float: center;
+	width: 60%;
+	border: 1px;
+	padding: 5px;
+	text-align: left;
+	font-family: helvetica; color: #5F9EA0;
+	font-weight: bold;
+	background: #cccccc;
+	margin-top: 20px;
+	border: 1px solid #80C4DE;
+	border-radius: 10px 10px 10px 10px;
+	font-size: 20px;
+
+}
+table #firstcol{
+	width: 40%;
+	margin: 3px;
+	color: white;
+}
+#info img{
+	width: 100px;
+	height: 100px;
+	align-self: center;
+}
+#p_info{
+	text-align: center;
+	color: #e8491d;
+}
+.textissues{
+	font-family: aerial;
+	font-size: 100%;
+}
+/*media queries*/
+@media(max-width: 768px){
+	header #branding,
+	header nav,
+	header nav li,
+	#boxes .box,
+	article#main_col,
+	aside#sidebar,
+	form .input-group {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header {
+		padding-bottom: 20px;
+	}
+	#showcase h1{
+		margin-top: 40px;
+	}
+}
